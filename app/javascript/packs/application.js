@@ -15,7 +15,8 @@ import "@popperjs/core"
 import "jquery-easing"
 import "datatables"
 import "fontawesome-free"
-import "../stylesheets/application.scss"
+
+require('../stylesheets/application.scss');
 
 import "../jquery/jquery"
 

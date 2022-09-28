@@ -1,6 +1,8 @@
 const { environment } = require('@rails/webpacker')
 
-const webpack = require('webpack')
+var webpack = require('webpack');
+const styl =  require('./loaders/stylus')
+
 environment.plugins.append(
   "Provide",
   new webpack.ProvidePlugin({
@@ -10,5 +12,6 @@ environment.plugins.append(
   })
 );
 
+environment.loaders.append('stylus', styl)
 
 module.exports = environment
